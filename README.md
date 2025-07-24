@@ -1,11 +1,11 @@
-#GopherSMTP
+# GopherSMTP
 
 GopherSMTP is an ethical phishing simulation tool written in Go that lets you craft and send emails and SMS messages via SMTP. It's designed for red teamers, security awareness trainers, and IT admins who want to test how users respond to common social engineering techniques.
 🚨 Ethical Disclaimer
 
     GopherSMTP is intended for educational and authorized security testing only. Do not use this tool on networks, people, or systems you do not own or have explicit permission to test.
 
-✉️ Features
+## ✉️ Features
 
     Send custom or templated phishing emails to single or multiple recipients
 
@@ -17,7 +17,7 @@ GopherSMTP is an ethical phishing simulation tool written in Go that lets you cr
 
     Compatible with Gmail, Outlook, and other SMTP servers
 
-🖥️ Menu Overview
+## 🖥️ Menu Overview
 
    ______            __              _____ __  _____________ 
   / ____/___  ____  / /_  ___  _____/ ___//  |/  /_  __/ __ \
