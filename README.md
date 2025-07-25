@@ -19,7 +19,7 @@ GopherSMTP is an ethical phishing simulation tool written in Go that lets you cr
 
 ## 🖥️ Menu Overview
 
-#GopherSMTP
+# GopherSMTP
 
 SMTP attack tool
 List:
@@ -30,8 +30,7 @@ List:
 4: smsOverSmtp
 5: Send smsOverSmtp to multiple numbers
 
-🛠️ Usage
-🔐 Requirements
+## 🔐 Requirements
 
     Go 1.18+
 
@@ -39,64 +38,35 @@ List:
 
     Allow less secure apps or app passwords (for Gmail)
 
-📦 Installation
+## 📦 Installation
 
-git clone https://github.com/yourusername/gophersmtp.git
-cd gophersmtp
-go build -o gophersmtp
-./gophersmtp
+```git clone https://github.com/yourusername/gophersmtp.git```
+```cd gophersmtp```
+```go build -o gophersmtp```
+```./gophersmtp```
 
-📧 Templated Email Example
+## 📧 Templated Email Example
 
 Your email template (e.g. email_template.txt) can use:
 
-Hello {{.A}}, please reset your password at {{.B}}.
+```Hello {{.A}}, please reset your password at {{.B}}.```
 
 Then GopherSMTP injects values into {{.A}} and {{.B}}.
-🧪 Examples
-Send a Single Email
 
-Choose option 1
-Enter recipient email
-Enter subject and message body
-
-Phish from Template
-
-Choose option 2
-Paste email, subject, template file
-Inject name and link variables
-
-SMS Over SMTP
-
-Choose option 4 or 5
-Enter phone number(s)
-Use known gateway or try guessing
-Send via email-to-text
-
-📁 File Format
-Email List File (for option 3):
-
-alice@example.com
-bob@example.com
-
-SMS List File (for option 5):
-
-4165551234
-5146669876
-
-⚖️ Legal Notice
+## ⚖️ Legal Notice
 
 This tool must only be used in environments where you have explicit permission. Misuse can lead to legal consequences.
-💡 Why GopherSMTP?
 
-    Lightweight and fast
+## 💡 Why GopherSMTP?
+
+    Girls will think you're cool
 
     Go-native and cross-platform
 
-    Extensible and easy to modify
+    Customizable and Easy to modify
 
     Great for phishing simulation and training
 
-📃 License
+## 📃 License
 
 Licensed software is fucking gay
