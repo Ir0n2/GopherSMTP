@@ -23,7 +23,7 @@ GopherSMTP is an ethical phishing simulation tool written in Go that lets you cr
 
 SMTP attack tool
 List:
-0: quit 
+0: quit\n
 1: send single email 
 2: Phish from a template 
 3: send to multiple emails 
