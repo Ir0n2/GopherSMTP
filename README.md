@@ -1,53 +1,80 @@
-***GopherSMTP***
 
-**What is GopherSMTP?**
+# GopherSMTP
 
-		GopherSMTP is a SMTP phishing tool written in golang that (at it's core) automates sending emails. GopherSMTP also takes advantage of smtp to sms gateways to create convincing sms messages.
-		Basically it's a terminal tool that lets you send scary emails and texts. 
+**GopherSMTP** is an SMTP-based phishing tool written in Go that automates email and SMS message delivery via SMTP gateways. It’s a terminal-driven app designed for sending spoofed or prank messages, including through SMS-to-email gateways for added realism.
 
-**Here's what you can do:**
+> **⚠️ Disclaimer:** This tool is for **educational** and **ethical testing** purposes only. Do not use GopherSMTP to harass, threaten, or deceive individuals without their consent. Always comply with local laws and terms of service. Or don't. I can't stop you.
 
-	1: send single email
-	2: send to multiple emails 
-	3: smsOverSmtp
-	4: Send smsOverSmtp to multiple numbers
-	5: Set email
-	6: Spam emails
-	7. Spam smsOverSmtp
+---
 
-**What would I like to add**
+## 💡 What Can GopherSMTP Do?
 
-	I would like to add an option for google gemini to generate a phishing message.
+GopherSMTP lets you send **emails and SMS messages** from the terminal, with the following features:
 
-**Who made this?**
+```
+1. Send a single email
+2. Send to multiple email addresses
+3. Send SMS via SMTP (smsOverSmtp)
+4. Send SMS via SMTP to multiple numbers
+5. Set sender email (via AttackerEmails.txt)
+6. Spam emails
+7. Spam smsOverSmtp
+```
 
-	I made this! Ir0n2
+---
 
-**Why would you use this?**
+## 🌐 Planned Feature
 
-	I don't know. To scare your friends. It makes a fun prank.
+* 🔮 **AI-Powered Phishing**: Integrate **Google Gemini** to auto-generate convincing phishing messages.
 
-**Where can I use this software?**
+---
 
-	You can use this on damn near anything with a golang compiler and an internet connection.
+## 🧠 Why Use This?
 
-**When is this useful?**
+> Use it to scare your friends with creepy texts or fake emails. For example, I once used it to tell my friend (pretending to be his hospital) that his vaccine was contaminated with HIV. He didn’t sleep for two days. That’s the kind of prank power we’re talking about.
 
-	This isn't useful unless you want to scare someone and know what you're doing. An example of how to use it is when my friend got his shots. 	
-	I know what hospital he goes to, so I made a gmail in the hospitals name and used smtpToSmS to tell him his shot was contaminated with HIV.
-	Pranks are fun :)
+---
 
-**How do I install it?**
+## 📦 How to Install
 
-`step 1: have golang installed`
+1. **Install Go** ([https://go.dev/doc/install](https://go.dev/doc/install))
 
-`step 2: git clone https://github.com/Ir0n2/GopherSMTP`
+2. Clone this repo:
 
-`step 3: cd GopherSMTP`
+   ```bash
+   git clone https://github.com/Ir0n2/GopherSMTP
+   cd GopherSMTP
+   ```
 
-`step 4 create AttackerEmails.txt and enter your email on the row and app password on the second row`
+3. Create a file called `AttackerEmails.txt` with your sender email and app password:
 
-`go run email.go`
+   ```
+   your_email@gmail.com
+   your_app_password
+   ```
 
-*You literally just need to put your email and app password in "AttackerEmails.txt", then run the go file...*
+4. Run it:
 
+   ```bash
+   go run email.go
+   ```
+
+---
+
+## ⚙️ Compatibility
+
+You can use this on **any OS** with a Go compiler and internet access — Windows, macOS, Linux, WSL — it doesn’t matter.
+
+---
+
+## 👨‍💻 Who Made This?
+
+Made by **Ir0n2**. Except for this read me. I got lazy and forced chatgpt to make it all pretty.
+
+---
+
+## 🛑 Legal Disclaimer
+
+This tool is for **educational and research purposes only**. The developer is **not responsible** for any misuse of this software. Do not use this to impersonate institutions, harass people, or violate laws.
+
+---
