@@ -1,80 +1,44 @@
-# GopherSMTP
+***GopherSMTP***
 
-GopherSMTP is an ethical phishing simulation tool written in Go that lets you craft and send emails and SMS messages via SMTP. It's designed for hackers, and IT admins/employers who want to test how users respond to common social engineering techniques.
+What is GopherSMTP?
 
-## 🚨 Ethical Disclaimer
+GopherSMTP is a SMTP phishing tool written in golang that (at it's core) automates sending emails. GopherSMTP also takes advantage of smtp to sms gateways to create convincing sms messages.
+Basically it's a terminal tool that lets you send scary emails and texts. 
 
-    GopherSMTP is intended for educational and authorized security testing only. Do not use this tool on random people or even close friends. When used properly it can cause the recipient anxiety.
+Here's what you can do:
 
-## ✉️ Features
+in the form of either an email or sms message you can:
 
-    Send custom or templated phishing emails to single or multiple recipients
+choose to send your message to a single person or list of people.
 
-    SMS-over-SMTP support: send texts using carrier gateways
+use templates for your message (You can write your own templates)
 
-    Supports injection into templates for dynamic customization
+Or you can write your own message in the terminal if you like
 
-    Minimal, terminal-based UI
+I'd like to be able to spin up new emails from my own mail server but those would be traced to your ip 
+and any mail sent from that server would just end up in the spam folder.
 
-    Compatible with Gmail, Outlook, and other SMTP servers
+we may add an option for google gemini to generate a phishing message. and flood the targets inbox with multiple emails.
 
-## 🖥️ Menu Overview
+Who made this?
 
-# GopherSMTP
+I made this! Me, M.E
 
-SMTP attack tool
+Why would you use this?
 
-List:
+I don't know. To scare your friends.
 
-0: quit
+Where can I use this software?
 
-1: send single email
+You can use this on damn near anything with a golang compiler and an internet connection.
 
-2: Phish from a template
+When is this useful?
+This isn't useful unless you want to scare someone and know what you're doing. An example of when to use it is that my friend got a needle at that hospital. 
+I know what hospital he goes to, so I make a gmail in that hospitals name and use smtpToSmS to tell him his shot was contaminated. It's awesome when it works.
+Pranks are fun.
 
-3: send to multiple emails 
+How does it work?
 
-4: smsOverSmtp
-
-5: Send smsOverSmtp to multiple numbers
-
-## 🔐 Requirements
-
-    Go 1.18+
-
-    Access to an SMTP server (e.g. Gmail SMTP)
-
-    Allow less secure apps or app passwords (for Gmail)
-
-## 📦 Installation
-
-```git clone https://github.com/yourusername/gophersmtp.git```
-```cd gophersmtp```
-```go build -o gophersmtp```
-```./gophersmtp```
-
-## 📧 Templated Email Example
-
-Your email template (e.g. email_template.txt) can use:
-
-```Hello {{.A}}, please reset your password at {{.B}}.```
-
-Then GopherSMTP injects values into {{.A}} and {{.B}}.
-
-## ⚖️ Legal Notice
-
-This tool must only be used in environments where you have explicit permission. Misuse can lead to legal consequences.
-
-## 💡 Why GopherSMTP?
-
-    Girls will think you're cool
-
-    Go-native and cross-platform
-
-    Customizable and Easy to modify
-
-    Great for phishing simulation and training
-
-## 📃 License
-
-Licensed software is fucking gay
+GopherSMTP works by sending emails. Any emails you want to use are stored in a text file called "AttackerEmails.txt", these are the emails you send from. Email is the first line, and your app password should be on the second line.
+The email selecor reads the file line by line and expects the gmail to be on the odd lines, and the password for the subsequent email to be on the line below it. So email1@gmail.com goes on line 1, and the password for that goes on line 2.
+If you can't figure out those instructions, you're the problem.
