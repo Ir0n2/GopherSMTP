@@ -40,9 +40,9 @@ GopherSMTP lets you send **emails and SMS messages** from the terminal, with the
 1. **Install Go** ([https://go.dev/doc/install](https://go.dev/doc/install))
 
 1.5. Install figlet
-```bash
-sudo apt install figlet
-```
+   ```bash
+   sudo apt install figlet
+   ```
 
 2. Clone this repo:
 
