@@ -23,15 +23,15 @@ I would like to add an option for google gemini to generate a phishing message.
 
 I made this! Ir0n2
 
-*Why would you use this?*
+**Why would you use this?**
 
-I don't know. To scare your friends. It makes a fun prant
+I don't know. To scare your friends. It makes a fun prank.
 
-Where can I use this software?
+**Where can I use this software?**
 
 You can use this on damn near anything with a golang compiler and an internet connection.
 
-When is this useful?
+**When is this useful?**
 This isn't useful unless you want to scare someone and know what you're doing. An example of when to use it is that my friend got a needle at that hospital. 
 I know what hospital he goes to, so I make a gmail in that hospitals name and use smtpToSmS to tell him his shot was contaminated. It's awesome when it works.
 Pranks are fun.
@@ -47,4 +47,6 @@ How do I install it?
 `step 4 create AttackerEmails.txt and enter your email on the row and app password on the second row`
 
 `go run email.go`
+
+*You literally just need to run the go file...*
 
