@@ -1,0 +1,6 @@
+Hello {{.A}},
+
+We wanted to let you know about our latest updates.
+Please click here for more info: {{.B}}
+
+Best regards, ZeroCool.
