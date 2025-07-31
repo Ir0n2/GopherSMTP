@@ -7,6 +7,10 @@
 
 ---
 
+
+Inline-style: 
+![alt text]()
+
 ## 💡 What Can GopherSMTP Do?
 
 GopherSMTP lets you send **emails and SMS messages** from the terminal, with the following features:
