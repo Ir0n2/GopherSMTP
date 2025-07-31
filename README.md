@@ -7,9 +7,9 @@
 
 ---
 
-
-Inline-style: 
-![alt text]()
+<p align="center">
+  <img width="460" height="300" src="https://github.com/Ir0n2/GopherSMTP/blob/main/GophersmtpScreenGrab.png">
+</p>
 
 ## 💡 What Can GopherSMTP Do?
 
