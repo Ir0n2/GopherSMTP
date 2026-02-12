@@ -35,7 +35,7 @@ GopherSMTP lets you send **emails and SMS messages** from the terminal, with the
 
 ## 🧠 Why Use This?
 
-> Use it to scare your friends with creepy texts or fake emails. For example, I once used it to tell my friend (pretending to be his hospital) that his vaccine was contaminated with HIV. He didn’t sleep for two days. That’s the kind of prank power we’re talking about.
+> Use it to scare your friends with creepy texts or fake emails. 
 
 ---
 
